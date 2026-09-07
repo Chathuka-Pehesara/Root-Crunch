@@ -1,14 +1,14 @@
 /* ==========================================================================
    ROOT CRUNCH - Natural Vegetable Chips
-   Design System & Styling
+   Design System & Styling (Craft Artisanal Edition)
    ========================================================================== */
 
 /* --- Google Fonts Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
 
-/* --- Root CSS Variables (Extracted from Product Packaging) --- */
+/* --- Root CSS Variables --- */
 :root {
-  /* Colors */
+  /* Colors - Packaging Matched */
   --bg-kraft: #F4EFE6;
   --bg-kraft-warm: #EAE1D0;
   --bg-kraft-card: #E5DAC6;
@@ -41,11 +41,11 @@
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Space Grotesk', monospace;
 
-  /* Elevations & Shadows */
+  /* Elevation */
   --shadow-sm: 0 2px 8px rgba(32, 27, 24, 0.06);
   --shadow-md: 0 8px 24px rgba(32, 27, 24, 0.09);
   --shadow-lg: 0 16px 40px rgba(32, 27, 24, 0.14);
-  --shadow-inner: inset 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-stamp: 2px 3px 0px rgba(32, 27, 24, 0.15);
 
   /* Borders & Radius */
   --radius-sm: 8px;
@@ -59,7 +59,7 @@
   --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* --- Base & Reset --- */
+/* --- Base Reset --- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -182,7 +182,7 @@ h1, h2, h3, h4, .serif-font {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(244, 239, 230, 0.92);
+  background-color: rgba(244, 239, 230, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-kraft);
   transition: var(--transition-fast);
@@ -210,8 +210,13 @@ h1, h2, h3, h4, .serif-font {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
   box-shadow: 0 4px 12px rgba(38, 77, 43, 0.2);
+}
+
+.logo-badge svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--bg-kraft-paper);
 }
 
 .logo-text {
@@ -534,51 +539,106 @@ h1, h2, h3, h4, .serif-font {
   color: var(--text-muted);
 }
 
-/* --- Features Banner Section --- */
+/* --- Redesigned Creative Craft Stamp Features Banner Section --- */
 .features-banner {
-  background-color: var(--brand-green-dark);
-  color: var(--bg-kraft-paper);
-  padding: 40px 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background-color: var(--bg-kraft-card);
+  padding: 60px 0;
+  border-top: 2px solid var(--border-kraft);
+  border-bottom: 2px solid var(--border-kraft);
+  position: relative;
+}
+
+.features-banner::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px dashed var(--brand-green);
+  opacity: 0.4;
+}
+
+.features-banner::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px dashed var(--brand-green);
+  opacity: 0.4;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 32px;
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
 }
 
-.feature-item {
+.feature-stamp-card {
+  background: var(--bg-kraft-paper);
+  border: 2px solid var(--border-kraft);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-stamp);
+  transition: var(--transition-normal);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px;
 }
 
-.feature-icon-wrapper {
-  width: 64px;
-  height: 64px;
-  background-color: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
+.feature-stamp-card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  border-color: var(--brand-green);
+  box-shadow: 4px 6px 0px rgba(38, 77, 43, 0.2);
+}
+
+.stamp-icon-box {
+  width: 72px;
+  height: 72px;
+  background-color: var(--bg-kraft-warm);
+  border: 2px dashed var(--brand-green);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
   margin-bottom: 16px;
+  color: var(--brand-green);
+  transition: var(--transition-fast);
 }
 
-.feature-item h3 {
+.feature-stamp-card:hover .stamp-icon-box {
+  background-color: var(--brand-green);
   color: var(--bg-kraft-paper);
-  font-size: 1.2rem;
-  margin-bottom: 6px;
+  border-style: solid;
 }
 
-.feature-item p {
-  color: rgba(245, 239, 230, 0.75);
-  font-size: 0.9rem;
+.feature-stamp-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+  font-family: var(--font-serif);
+}
+
+.feature-stamp-card p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.stamp-tag {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-green);
+  background-color: rgba(38, 77, 43, 0.08);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
 }
 
 /* --- Vegetable Ingredients Showcase Section --- */
@@ -632,14 +692,14 @@ h1, h2, h3, h4, .serif-font {
 }
 
 .root-icon-badge {
-  width: 60px;
-  height: 60px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   margin-bottom: 20px;
+  border: 1px solid rgba(0,0,0,0.08);
 }
 
 .root-card.carrot .root-icon-badge { background-color: var(--accent-carrot-light); }
