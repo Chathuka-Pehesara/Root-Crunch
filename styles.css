@@ -199,21 +199,36 @@ h1, h2, h3, h4, .serif-font {
   display: flex;
   align-items: center;
   gap: 14px;
+  text-decoration: none;
 }
 
-.logo-img {
-  width: 52px;
-  height: 52px;
+/* Custom Vector Logo Icon Box */
+.logo-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  max-width: 48px;
   border-radius: 50%;
-  object-fit: cover;
+  background-color: var(--bg-kraft-paper);
   border: 2px solid var(--brand-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 4px 12px rgba(38, 77, 43, 0.18);
-  background-color: #FAF7F2;
+  flex-shrink: 0;
+  padding: 6px;
   transition: var(--transition-fast);
 }
 
-.logo-group:hover .logo-img {
-  transform: scale(1.05) rotate(-2deg);
+.logo-group:hover .logo-icon-wrapper {
+  transform: scale(1.05) rotate(-3deg);
+  background-color: #fff;
+}
+
+.logo-icon-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .logo-text {
@@ -341,11 +356,16 @@ h1, h2, h3, h4, .serif-font {
   margin-bottom: 24px;
 }
 
-.hero-badge-img {
+.hero-badge-icon {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  object-fit: cover;
+  background-color: var(--brand-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  flex-shrink: 0;
 }
 
 .hero-title {
