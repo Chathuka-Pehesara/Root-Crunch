@@ -192,31 +192,28 @@ h1, h2, h3, h4, .serif-font {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 84px;
 }
 
 .logo-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
-.logo-badge {
-  width: 44px;
-  height: 44px;
-  background-color: var(--brand-green);
-  color: var(--bg-kraft-paper);
+.logo-img {
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(38, 77, 43, 0.2);
+  object-fit: cover;
+  border: 2px solid var(--brand-green);
+  box-shadow: 0 4px 12px rgba(38, 77, 43, 0.18);
+  background-color: #FAF7F2;
+  transition: var(--transition-fast);
 }
 
-.logo-badge svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--bg-kraft-paper);
+.logo-group:hover .logo-img {
+  transform: scale(1.05) rotate(-2deg);
 }
 
 .logo-text {
@@ -226,7 +223,7 @@ h1, h2, h3, h4, .serif-font {
 
 .logo-title {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   font-weight: 800;
   color: var(--brand-green);
   line-height: 1;
@@ -333,8 +330,8 @@ h1, h2, h3, h4, .serif-font {
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 18px;
+  gap: 10px;
+  padding: 6px 18px 6px 8px;
   background: var(--bg-kraft-card);
   border: 1px solid var(--border-kraft);
   border-radius: var(--radius-pill);
@@ -342,6 +339,13 @@ h1, h2, h3, h4, .serif-font {
   font-weight: 600;
   color: var(--brand-green-dark);
   margin-bottom: 24px;
+}
+
+.hero-badge-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .hero-title {
@@ -539,7 +543,7 @@ h1, h2, h3, h4, .serif-font {
   color: var(--text-muted);
 }
 
-/* --- Redesigned Creative Craft Stamp Features Banner Section --- */
+/* --- Craft Stamp Features Banner Section --- */
 .features-banner {
   background-color: var(--bg-kraft-card);
   padding: 60px 0;
