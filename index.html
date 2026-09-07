@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROOT CRUNCH | Natural Vegetable Chips - Rooted in Nature, Made for You</title>
+  
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description" content="Root Crunch is made from real Sri Lankan vegetables sliced to perfection: Carrot, Lotus Root (Nelum Ala), Kohila Ala & Sweet Potato. Lightly seasoned, baked to crunchy goodness.">
+  <meta name="keywords" content="vegetable chips, lotus root chips, nelum ala, kohila ala, sweet potato chips, carrot chips, baked vegetable chips, Sri Lanka snacks, healthy snacks, natural chips">
+  <meta property="og:title" content="ROOT CRUNCH - Natural Vegetable Chips">
+  <meta property="og:description" content="100% Real Vegetables. Baked Not Fried. High in Fibre with No Artificial Additives.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="badge">Sri Lanka Original</span>
+    <span>🇱🇰 100% Real Root Vegetables • Baked to Crunchy Perfection • Net Weight 80g e</span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo-group">
+        <div class="logo-badge">🌿</div>
+        <div class="logo-text">
+          <span class="logo-title">ROOT CRUNCH</span>
+          <span class="logo-sub">Natural Vegetable Chips</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#roots">Our Roots</a></li>
+        <li><a href="#story">Craft Story</a></li>
+        <li><a href="#nutrition">Nutrition & Pack</a></li>
+        <li><a href="#features">Crunch Profile</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#community" class="btn-primary">
+          <span>Where to Buy</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🍃</span>
+          <span>Rooted in Nature, Made for You.</span>
+        </div>
+
+        <h1 class="hero-title">
+          Real Vegetables.<br>
+          <span class="highlight">Baked to Pure</span> Crunchiness.
+        </h1>
+
+        <p class="hero-description">
+          Made from real Sri Lankan carrots, lotus root (nelum ala), elephant foot yam (kohila ala), and sweet potatoes. Sliced to perfection, lightly seasoned with sea salt, and baked into a wholesome snack you can feel good about.
+        </p>
+
+        <div class="hero-pills">
+          <span class="pill-tag">🔥 Baked Not Fried</span>
+          <span class="pill-tag">🌾 High in Fibre</span>
+          <span class="pill-tag">🌱 No Artificial Additives</span>
+          <span class="pill-tag">🇱🇰 Made in Sri Lanka</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#roots" class="btn-primary">
+            <span>Explore Ingredients</span>
+          </a>
+          <a href="#nutrition" class="btn-secondary">
+            <span>Inspect Packaging</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Product Interactive Stage -->
+      <div class="hero-stage">
+        <div class="hero-card-container">
+          <div class="view-toggle">
+            <button class="toggle-btn active" id="toggle-front">Front Pack View</button>
+            <button class="toggle-btn" id="toggle-back">Chips Close-Up</button>
+          </div>
+
+          <div class="image-frame">
+            <img id="pack-image" src="assets/root_crunch_hero.jpg" alt="Root Crunch Packaging Front View">
+
+            <!-- Interactive Hotspots on Pack -->
+            <div id="hotspot-container">
+              <div class="pack-hotspot hotspot-1" data-target="root-carrot">
+                1
+                <span class="hotspot-tooltip">🥕 Carrot Slices</span>
+              </div>
+              <div class="pack-hotspot hotspot-2" data-target="root-lotus">
+                2
+                <span class="hotspot-tooltip">🪷 Lotus Root (Nelum Ala)</span>
+              </div>
+              <div class="pack-hotspot hotspot-3" data-target="root-kohila">
+                3
+                <span class="hotspot-tooltip">🥔 Kohila Ala (Elephant Foot Yam)</span>
+              </div>
+              <div class="pack-hotspot hotspot-4" data-target="root-sweetpotato">
+                4
+                <span class="hotspot-tooltip">🍠 Sweet Potato</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pack-footer-meta">
+            <span id="pack-view-title">FRONT OF PACK SHOWCASE</span>
+            <span>NET WEIGHT 80g e</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Key Pillars Banner -->
+  <section class="features-banner">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">🥕</div>
+        <h3>100% Real Vegetables</h3>
+        <p>Whole root crops, whole natural goodness</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">🌾</div>
+        <h3>High in Fibre</h3>
+        <p>7.6g dietary fibre per 100g</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">🌱</div>
+        <h3>No Artificial Colours</h3>
+        <p>No synthetic preservatives or additives</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-wrapper">🔥</div>
+        <h3>Baked Not Fried</h3>
+        <p>Crispy, light, and less oil</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 4 Hero Root Vegetables Section -->
+  <section class="vegetables-section" id="roots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Harvested From The Earth</span>
+        <h2 class="section-title">The Four <span class="green">Power Roots</span></h2>
+        <p class="section-subtitle">
+          Every pack of Root Crunch brings together four extraordinary tropical root vegetables, each bringing its own signature crunch, vibrant color, and wholesome nutrients.
+        </p>
+      </div>
+
+      <div class="roots-grid">
+        <!-- Carrot Card -->
+        <div class="root-card carrot" id="root-carrot">
+          <div>
+            <div class="root-icon-badge">🥕</div>
+            <h3 class="root-name-eng">Carrot</h3>
+            <div class="root-name-local">Daucus Carota</div>
+            <p class="root-desc">
+              Thinly sliced and slow-baked to intensify their subtle natural sweetness and golden amber crunch.
+            </p>
+          </div>
+          <ul class="root-benefits">
+            <li>Rich in Beta-Carotene & Vitamin A</li>
+            <li>Naturally sweet & vibrant amber color</li>
+            <li>Lightly crisped with sea salt</li>
+          </ul>
+        </div>
+
+        <!-- Lotus Root Card -->
+        <div class="root-card lotus" id="root-lotus">
+          <div>
+            <div class="root-icon-badge">🪷</div>
+            <h3 class="root-name-eng">Lotus Root</h3>
+            <div class="root-name-local">Nelum Ala</div>
+            <p class="root-desc">
+              The star of our blend. Iconic wheel-shaped slices with natural air channels that deliver an unbeatable crisp snap.
+            </p>
+          </div>
+          <ul class="root-benefits">
+            <li>Distinctive lace wheel structure</li>
+            <li>High dietary fibre & plant minerals</li>
+            <li>Unrivalled snap and delicate texture</li>
+          </ul>
+        </div>
+
+        <!-- Kohila Ala Card -->
+        <div class="root-card kohila" id="root-kohila">
+          <div>
+            <div class="root-icon-badge">🥔</div>
+            <h3 class="root-name-eng">Kohila Ala</h3>
+            <div class="root-name-local">Elephant Foot Yam</div>
+            <p class="root-desc">
+              A prized traditional Sri Lankan super-root. Rich in unique prebiotic fibres that support gut wellness.
+            </p>
+          </div>
+          <ul class="root-benefits">
+            <li>Authentic Sri Lankan heritage root</li>
+            <li>Prebiotic gut health champion</li>
+            <li>Hearty, satisfying, savory crunch</li>
+          </ul>
+        </div>
+
+        <!-- Sweet Potato Card -->
+        <div class="root-card sweetpotato" id="root-sweetpotato">
+          <div>
+            <div class="root-icon-badge">🍠</div>
+            <h3 class="root-name-eng">Sweet Potato</h3>
+            <div class="root-name-local">Ipomoea Batatas</div>
+            <p class="root-desc">
+              Golden-purple slices packed with complex carbohydrates and antioxidants for long-lasting energy.
+            </p>
+          </div>
+          <ul class="root-benefits">
+            <li>Complex carb energy source</li>
+            <li>Rich in natural antioxidants</li>
+            <li>Creamy earthy sweet flavor profile</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craft Story Section -->
+  <section class="craft-section" id="story">
+    <div class="container craft-grid">
+      <div class="craft-image-box">
+        <img src="assets/root_chips_bowl.jpg" alt="Root Crunch Bowl of Baked Vegetable Chips">
+        <div class="craft-badge-overlay">
+          <div class="big-num">80g</div>
+          <div class="label">Net Weight Pack</div>
+        </div>
+      </div>
+
+      <div class="craft-content">
+        <span class="section-tag">Artisanal Process</span>
+        <h2 class="section-title">Sliced to Perfection, <br><span class="green">Baked to Goodness</span></h2>
+        
+        <div class="quote-box">
+          "Root Crunch is made from real vegetables sliced to perfection, lightly seasoned and baked to crunchy goodness. A wholesome snack you can feel good about."
+        </div>
+
+        <p class="hero-description">
+          Unlike ordinary potato chips that are deep-fried in excessive oil, our root vegetables are harvested directly from Sri Lankan family farms, washed, precisely sliced into thin cross-sections, tossed lightly in high-grade rice bran oil, and oven-baked under controlled heat.
+        </p>
+
+        <div style="margin-top: 24px;">
+          <a href="#nutrition" class="btn-primary">
+            <span>Read Nutrition Facts</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition & Back of Pack Section -->
+  <section class="nutrition-section" id="nutrition">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Complete Transparency</span>
+        <h2 class="section-title">Back of Pack & <span class="green">Nutrition Facts</span></h2>
+        <p class="section-subtitle">
+          We believe in 100% clean labels. Here is the exact nutritional profile and ingredient breakdown directly from our physical package.
+        </p>
+      </div>
+
+      <div class="nutrition-container">
+        <!-- Left: FDA Style Interactive Nutrition Table -->
+        <div class="nutrition-facts-card">
+          <div class="nutrition-title">Nutrition Information</div>
+          
+          <div class="serving-selector">
+            <span style="align-self: center; font-size: 0.8rem; font-weight: bold; margin-right: 4px;">Select Portion:</span>
+            <button class="serving-btn active" id="btn-100g">Per 100g</button>
+            <button class="serving-btn" id="btn-40g">Per Serving (40g)</button>
+            <button class="serving-btn" id="btn-80g">Per Pack (80g)</button>
+          </div>
+
+          <div class="nutrition-row bold thick-top">
+            <span>Energy</span>
+            <span id="val-energy">484 kcal</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Protein</span>
+            <span id="val-protein">6.2 g</span>
+          </div>
+          <div class="nutrition-row bold">
+            <span>Total Fat</span>
+            <span id="val-fat">20.1 g</span>
+          </div>
+          <div class="nutrition-row indent">
+            <span>Saturated Fat</span>
+            <span id="val-satfat">2.3 g</span>
+          </div>
+          <div class="nutrition-row bold">
+            <span>Carbohydrate</span>
+            <span id="val-carbs">67.4 g</span>
+          </div>
+          <div class="nutrition-row indent">
+            <span>Dietary Fibre</span>
+            <span id="val-fibre">7.6 g</span>
+          </div>
+          <div class="nutrition-row indent">
+            <span>Sugars</span>
+            <span id="val-sugars">9.1 g</span>
+          </div>
+          <div class="nutrition-row bold">
+            <span>Sodium</span>
+            <span id="val-sodium">210 mg</span>
+          </div>
+        </div>
+
+        <!-- Right: Ingredients & Back-of-pack details -->
+        <div class="ingredients-detail-box">
+          <div>
+            <div class="detail-block">
+              <h4>INGREDIENTS</h4>
+              <p>Carrot, Lotus Root (Nelum Ala), Kohila Ala (Elephant Foot Yam), Sweet Potato, Rice Bran Oil, Tapioca Starch, Sea Salt, Natural Spices.</p>
+            </div>
+
+            <div class="detail-block">
+              <h4>ALLERGEN ADVICE</h4>
+              <p>Made in a facility that may process peanuts, tree nuts, soy and sesame.</p>
+            </div>
+
+            <div class="detail-block">
+              <h4>STORAGE INSTRUCTIONS</h4>
+              <p>Store in a cool, dry place. Keep away from direct sunlight to retain freshness.</p>
+            </div>
+
+            <div class="allergen-badge">
+              <strong>✓ Clean Guarantee:</strong> No artificial colours, no synthetic preservatives, non-GMO.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crunch Taste Profile Section -->
+  <section class="taste-section" id="features">
+    <div class="container taste-grid">
+      <div>
+        <span class="section-tag">Sensory Rating</span>
+        <h2 class="section-title">The Ultimate <span class="green">Crunch Balance</span></h2>
+        <p class="hero-description">
+          Our unique oven-baking technique creates a delicate shatter crisp that satisfies your snack cravings without leaving greasy fingers.
+        </p>
+
+        <div style="margin-top: 32px;">
+          <div class="meter-group">
+            <div class="meter-header">
+              <span>Crispiness & Shatter Snap</span>
+              <span>95%</span>
+            </div>
+            <div class="meter-bar-bg"><div class="meter-bar-fill fill-crunch"></div></div>
+          </div>
+
+          <div class="meter-group">
+            <div class="meter-header">
+              <span>Natural Savory Spice Balance</span>
+              <span>85%</span>
+            </div>
+            <div class="meter-bar-bg"><div class="meter-bar-fill fill-savory"></div></div>
+          </div>
+
+          <div class="meter-group">
+            <div class="meter-header">
+              <span>Prebiotic Dietary Fibre Boost</span>
+              <span>90%</span>
+            </div>
+            <div class="meter-bar-bg"><div class="meter-bar-fill fill-fibre"></div></div>
+          </div>
+
+          <div class="meter-group">
+            <div class="meter-header">
+              <span>Natural Root Sweetness</span>
+              <span>65%</span>
+            </div>
+            <div class="meter-bar-bg"><div class="meter-bar-fill fill-sweet"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <img src="assets/root_chips_bowl.jpg" style="border-radius: var(--radius-lg); border: 2px solid var(--border-kraft); box-shadow: var(--shadow-lg);" alt="Crispy Lotus Root and Sweet Potato Chips">
+      </div>
+    </div>
+  </section>
+
+  <!-- Community & Stockists Section -->
+  <section class="community-section" id="community">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Join The Movement</span>
+        <h2 class="section-title">Let's Get <span class="green">Social!</span></h2>
+        <a href="https://instagram.com" target="_blank" class="social-handle">
+          <span>📷 @rootcrunch.lk</span>
+        </a>
+      </div>
+
+      <!-- Instagram Grid Mockup -->
+      <div class="insta-grid">
+        <div class="insta-card">
+          <img src="assets/root_crunch_hero.jpg" alt="Root Crunch Lifestyle Pack">
+          <div class="insta-overlay">❤️ 1.2k Likes</div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/root_chips_bowl.jpg" alt="Lotus Root Chips Bowl">
+          <div class="insta-overlay">💬 340 Comments</div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/root_crunch_hero.jpg" alt="Sri Lanka Farm Fresh Harvest">
+          <div class="insta-overlay">🌾 Farm Fresh</div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/root_chips_bowl.jpg" alt="Healthy Snacking">
+          <div class="insta-overlay">🔥 Baked Goodness</div>
+        </div>
+      </div>
+
+      <!-- Newsletter Subscription Card -->
+      <div class="newsletter-card">
+        <div class="newsletter-text">
+          <h3>Get Fresh Batch Alerts</h3>
+          <p>Subscribe for exclusive stockist drops, new root flavor launches, and special online discounts.</p>
+        </div>
+
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email address..." required>
+          <button type="submit">Join Crunch Club</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-group">
+            <div class="logo-badge">🌿</div>
+            <div class="logo-text">
+              <span class="logo-title">ROOT CRUNCH</span>
+              <span class="logo-sub">Natural Vegetable Chips</span>
+            </div>
+          </div>
+          <p>
+            Wholesome natural vegetable chips made from carrots, lotus root, kohila ala & sweet potato. Rooted in nature, made for you.
+          </p>
+
+          <div style="margin-top: 20px;">
+            <div class="eco-badge">
+              <span>♻️</span>
+              <span>KEEP OUR CITY CLEAN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#roots">The 4 Power Roots</a></li>
+            <li><a href="#story">Craft Story</a></li>
+            <li><a href="#nutrition">Nutrition Facts</a></li>
+            <li><a href="#features">Taste Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ingredients</h4>
+          <ul>
+            <li><a href="#root-carrot">Carrot Chips</a></li>
+            <li><a href="#root-lotus">Lotus Root (Nelum Ala)</a></li>
+            <li><a href="#root-kohila">Kohila Ala (Yam)</a></li>
+            <li><a href="#root-sweetpotato">Sweet Potato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product Identity</h4>
+          <p style="font-size: 0.85rem; color: rgba(245,239,230,0.65); margin-bottom: 12px;">
+            Proudly Made in Sri Lanka 🇱🇰
+          </p>
+          <div class="barcode-box">
+            <div class="barcode-visual"></div>
+            <div class="barcode-text">4 796032 880152</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 ROOT CRUNCH (Pvt) Ltd. All rights reserved.</span>
+        <span>Crafted with natural passion for wholesome snacking.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span class="toast-msg">Notification Message</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
