@@ -388,6 +388,26 @@ h1, h2, h3, h4, .serif-font {
   font-weight: 600;
   color: var(--text-dark);
   box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: pill-slide-up 0.6s cubic-bezier(0.25, 1, 0.5, 1) backwards;
+  cursor: pointer;
+}
+
+.pill-tag:nth-child(1) { animation-delay: 0.1s; }
+.pill-tag:nth-child(2) { animation-delay: 0.2s; }
+.pill-tag:nth-child(3) { animation-delay: 0.3s; }
+.pill-tag:nth-child(4) { animation-delay: 0.4s; }
+
+.pill-tag:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(38,77,43,0.15);
+  border-color: var(--brand-green);
+  color: var(--brand-green);
+}
+
+@keyframes pill-slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-actions {
@@ -1431,6 +1451,25 @@ h1, h2, h3, h4, .serif-font {
   justify-content: space-between;
   font-size: 0.85rem;
   color: rgba(245, 239, 230, 0.5);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.developer-credit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.capi-logo {
+  height: 24px;
+  width: auto;
+  opacity: 0.8;
+  transition: var(--transition-fast);
+}
+
+.capi-logo:hover {
+  opacity: 1;
 }
 
 /* --- Toast Notification --- */
