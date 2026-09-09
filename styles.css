@@ -1327,6 +1327,75 @@ h1, h2, h3, h4, .serif-font {
   background-color: #c25720;
 }
 
+/* --- Contact CTA Banner --- */
+.contact-cta-card {
+  margin-top: 40px;
+  background: linear-gradient(135deg, var(--bg-kraft-paper) 0%, rgba(245, 239, 230, 0.7) 100%);
+  border: 2px dashed var(--accent-carrot);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(216, 101, 40, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-normal);
+}
+
+.contact-cta-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.contact-cta-content .contact-text h3 {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.contact-cta-content .contact-text p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  border: 2px solid var(--accent-carrot);
+  color: var(--text-dark);
+  padding: 16px 32px;
+  border-radius: var(--radius-pill);
+  font-size: 1.1rem;
+  font-weight: 800;
+  box-shadow: 0 4px 15px rgba(216, 101, 40, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+}
+
+.contact-email-btn:hover {
+  background-color: var(--accent-carrot);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(216, 101, 40, 0.3);
+}
+
+.animated-carrot {
+  font-size: 1.5rem;
+  display: inline-block;
+  animation: jump-carrot 1.5s ease-in-out infinite;
+}
+
+@keyframes jump-carrot {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(15deg); }
+}
+
 /* --- Footer --- */
 .footer {
   background-color: var(--bg-kraft-dark);
@@ -1541,6 +1610,11 @@ h1, h2, h3, h4, .serif-font {
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
+    text-align: center;
+  }
+
+  .contact-cta-content {
+    flex-direction: column;
     text-align: center;
   }
 }
