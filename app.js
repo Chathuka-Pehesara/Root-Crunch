@@ -108,43 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
       iron: '0.75mg', iron_dv: '4%'
     },
     'kohila': {
-      energy: '225 kcal',
-      fat: '9g', fat_dv: '11.5%',
-      satfat: '1.5g', satfat_dv: '7.5%',
-      sodium: '125mg', sodium_dv: '5.5%',
-      carbs: '32.5g', carbs_dv: '12%',
-      fibre: '4g', fibre_dv: '14.5%',
-      protein: '3g', protein_dv: '6%',
-      vita: '225µg', vita_dv: '25%',
-      vitc: '7.5mg', vitc_dv: '8.5%',
-      calcium: '30mg', calcium_dv: '2.5%',
-      iron: '0.75mg', iron_dv: '4%'
-    }
-  };
-      energy: '225 kcal',
-      fat: '9g', fat_dv: '11.5%',
-      satfat: '1.5g', satfat_dv: '7.5%',
-      sodium: '125mg', sodium_dv: '5.5%',
-      carbs: '32.5g', carbs_dv: '12%',
-      fibre: '4g', fibre_dv: '14.5%',
-      protein: '3g', protein_dv: '6%',
-      vita: '225µg', vita_dv: '25%',
-      vitc: '7.5mg', vitc_dv: '8.5%',
-      calcium: '30mg', calcium_dv: '2.5%',
-      iron: '0.75mg', iron_dv: '4%'
-    },
-    '150g': {
-      energy: '675 kcal',
-      fat: '27g', fat_dv: '34.5%',
-      satfat: '4.5g', satfat_dv: '22.5%',
-      sodium: '375mg', sodium_dv: '16.5%',
-      carbs: '97.5g', carbs_dv: '36%',
-      fibre: '12g', fibre_dv: '43.5%',
-      protein: '9g', protein_dv: '18%',
-      vita: '675µg', vita_dv: '75%',
-      vitc: '22.5mg', vitc_dv: '25.5%',
-      calcium: '90mg', calcium_dv: '7.5%',
-      iron: '2.25mg', iron_dv: '12%'
+      energy: '210 kcal',
+      fat: '7g', fat_dv: '9%',
+      satfat: '1.0g', satfat_dv: '5%',
+      sodium: '115mg', sodium_dv: '5%',
+      carbs: '34.0g', carbs_dv: '13%',
+      fibre: '6g', fibre_dv: '21%',
+      protein: '3.5g', protein_dv: '7%',
+      vita: '210µg', vita_dv: '23%',
+      vitc: '6.0mg', vitc_dv: '7%',
+      calcium: '35mg', calcium_dv: '3%',
+      iron: '0.90mg', iron_dv: '5%'
     }
   };
 
