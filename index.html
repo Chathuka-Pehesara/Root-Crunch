@@ -310,57 +310,6 @@
     </div>
   </section>
 
-  <!-- Product Varieties & Pricing Section -->
-  <section class="varieties-section" id="varieties">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Shop The Harvest</span>
-        <h2 class="section-title">Product <span class="green">Varieties</span></h2>
-        <p class="section-subtitle">
-          Discover our range of portion sizes tailored for your snacking needs.
-        </p>
-      </div>
-
-      <div class="varieties-grid">
-        <!-- Large Packet (Mix) -->
-        <div class="variety-card">
-          <div class="variety-image">
-            <img src="assets/root_crunch_hero.jpg" alt="Large Mix Packet">
-          </div>
-          <div class="variety-details">
-            <h3>Large Packet (Mix)</h3>
-            <p class="variety-weight">150g Net Weight</p>
-            <div class="variety-price">Rs. 300</div>
-          </div>
-        </div>
-
-        <!-- Small Packet (Mix) -->
-        <div class="variety-card">
-          <div class="variety-image">
-            <img src="assets/root_crunch_hero.jpg" alt="Small Mix Packet">
-          </div>
-          <div class="variety-details">
-            <h3>Small Packet (Mix)</h3>
-            <p class="variety-weight">50g Net Weight</p>
-            <div class="variety-price">Rs. 150</div>
-          </div>
-        </div>
-
-        <!-- Kohila Small Packet -->
-        <div class="variety-card">
-          <div class="variety-image">
-            <img src="assets/root_crunch_hero.jpg" alt="Kohila Small Packet">
-          </div>
-          <div class="variety-details">
-            <h3>Kohila Small Packet</h3>
-            <p class="variety-weight">50g Net Weight</p>
-            <div class="variety-price">Rs. 170</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Craft Story Section -->
   <section class="craft-section" id="story">
     <div class="container craft-grid">
@@ -409,12 +358,14 @@
         <div class="nutrition-facts-card">
           <div class="nutrition-title">Nutrition Information</div>
           
-          <div class="serving-selector">
-            <span style="align-self: center; font-size: 0.8rem; font-weight: bold; margin-right: 4px;">Select Portion:</span>
-            <button class="serving-btn active" id="btn-100g">Per 100g</button>
-            <button class="serving-btn" id="btn-50g">Per 50g</button>
-            <button class="serving-btn" id="btn-150g">Per 150g</button>
+          <div class="serving-selector nutrition-varieties">
+            <span style="align-self: center; font-size: 0.8rem; font-weight: bold; margin-right: 4px;">Select Variety:</span>
+            <button class="serving-btn active" id="btn-150g">Large Packet (150g)<br><span class="price-tag">Rs. 300</span></button>
+            <button class="serving-btn" id="btn-50g">Small Packet (50g)<br><span class="price-tag">Rs. 150</span></button>
+            <button class="serving-btn" id="btn-kohila">Kohila Small (50g)<br><span class="price-tag">Rs. 170</span></button>
           </div>
+          
+          <div id="nutrition-data-wrapper" class="fade-in-content">
 
           <div class="nutrition-row-header bold">
             <span>Amount Per Serving</span>
@@ -466,6 +417,7 @@
           <div class="nutrition-row vitamin-row">
             <span>Iron <span id="val-iron" class="val-inline">1.5mg</span></span>
             <span id="val-iron-dv" class="dv-val">8%</span>
+          </div>
           </div>
         </div>
 
