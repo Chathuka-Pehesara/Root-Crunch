@@ -743,6 +743,89 @@ h1, h2, h3, h4, .serif-font {
   font-weight: bold;
 }
 
+/* --- Product Varieties Section --- */
+.varieties-section {
+  padding: 80px 0;
+  background-color: var(--bg-kraft-warm);
+}
+
+.varieties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.variety-card {
+  background-color: var(--bg-kraft-paper);
+  border: 2px solid var(--border-kraft);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.variety-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-green);
+}
+
+.variety-image {
+  height: 240px;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-kraft);
+  overflow: hidden;
+}
+
+.variety-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.variety-card:hover .variety-image img {
+  transform: scale(1.05);
+}
+
+.variety-details {
+  padding: 24px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.variety-details h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.variety-weight {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.variety-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-green);
+  background-color: var(--brand-green-tint);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  align-self: center;
+}
+
 /* --- Craft Story Section --- */
 .craft-section {
   padding: 90px 0;
@@ -889,6 +972,33 @@ h1, h2, h3, h4, .serif-font {
 
 .nutrition-row.indent {
   padding-left: 16px;
+}
+
+.nutrition-row-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 4px;
+}
+
+.nutrition-row-header.bold {
+  font-weight: bold;
+}
+
+.val-inline {
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.dv-val {
+  font-weight: bold;
+}
+
+.vitamin-row {
+  font-size: 0.85rem;
+  padding: 4px 0;
 }
 
 /* Ingredients detail box */

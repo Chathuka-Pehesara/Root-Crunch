@@ -31,9 +31,9 @@ This repository contains the static web platform built to showcase the product's
 
 2. **Dynamic FDA Nutrition Information Calculator**
    - Portion switcher recalculates nutritional values instantly for:
-     - `Per 100g` (484 kcal | 6.2g Protein | 20.1g Fat | 7.6g Fibre)
-     - `Per Serving (40g)` (194 kcal | 2.5g Protein | 8.0g Fat | 3.0g Fibre)
-     - `Per Pack (80g)` (387 kcal | 5.0g Protein | 16.1g Fat | 6.1g Fibre)
+     - `Per 100g` (450 kcal | 6g Protein | 18g Fat | 8g Fibre)
+     - `Per 50g` (Small Pack) (225 kcal | 3g Protein | 9g Fat | 4g Fibre)
+     - `Per 150g` (Large Pack) (675 kcal | 9g Protein | 27g Fat | 12g Fibre)
 
 3. **Artisanal Design System**
    - Color palette extracted directly from physical kraft paper packaging:
@@ -92,11 +92,16 @@ Then navigate to `http://localhost:3000`.
 | Spec | Value |
 | :--- | :--- |
 | **Brand Name** | ROOT CRUNCH |
-| **Net Weight** | 80g e |
+| **Net Weight** | 50g (Small) / 150g (Large) |
 | **Origin** | Made in Sri Lanka 🇱🇰 |
 | **Barcode** | `4 796032 880152` |
 | **Social Handle** | `@rootcrunch.lk` |
 | **Storage** | Store in a cool, dry place away from direct sunlight |
+
+### Available Varieties
+- **Large Packet (Mix)** - 150g | Rs. 300
+- **Small Packet (Mix)** - 50g | Rs. 150
+- **Kohila Small Packet** - 50g | Rs. 170
 
 ---
 
